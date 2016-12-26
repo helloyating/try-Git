@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container mt">
+    <form   name="login">
+        <div class="panel panel-default" style="margin-top: 80px">
+            <div class="panel-heading">
+                <div class="btn-group">
+                    <span>返回</span>
+                    <span class="btn btn-primary active float-right">用户注册</span>
+                </div>
+            </div>
+            <div class="panel-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">姓名：</button>
+                                    </span>
+                            <input type="text" name="username" value="xiaohei" id="username" class="form-control" required/>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="input-group">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">密码：</button>
+                                    </span>
+                            <input type="password" name="password" value="123456" id="password" class="form-control" required/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="panel-footer text-center">
+                <input type="button" value="提交" class="btn btn-default" id="submit"/>
+                <input type="reset" value="重置" class="btn btn-default"/>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="javascripts/jquery.min.js"></script>
+<script src="javascripts/userlogin.js"></script>
+</body>
+</html>

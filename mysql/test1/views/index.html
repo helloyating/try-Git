@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <link type="text/css" rel="stylesheet" href="stylesheets/bootstrap.min.css"/>
+    <link rel="stylesheet" href="stylesheets/reset.css"/>
+</head>
+<body>
+<%- include("include/header") %>
+<div class="content">
+    你还要我怎样
+
+    <% for(var i=0;i< user.length;i++){%>
+        <li><span>姓名:</span><%- user[i].username %></li>
+        <li><span>年龄:</span><%- user[i].stu_age %></li>
+        <li><span>电话:</span><%- user[i].stu_cellphone  %></li>
+        <li><span>住址:</span><%- user[i].stu_address %></li>
+    <% }%>
+
+    <a href="/login">去注册</a>
+</div>
+
+<%- include("include/footer")%>
+<script src="javascripts/jquery-1.8.0.js"></script>
+<script src="javascripts/bookstrap.min.js"></script>
+</body>
+</html>
